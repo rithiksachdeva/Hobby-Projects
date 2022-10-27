@@ -25,7 +25,7 @@ def progress2(count, total, status=''):
     sys.stdout.write('[%s] %s%s ...%s\r' % (bar, percents, '%', status))
     sys.stdout.flush()
 
-wb = openpyxl.load_workbook('AH+SS - Copy.xlsx')
+wb = openpyxl.load_workbook('AH+SS.xlsx')
 sheet = wb.active
 i = 4
 while i <= 9:
@@ -85,10 +85,10 @@ sheet.cell(row=1, column = 9).value = "SL"
 sheet.cell(row=1, column = 10).value = "WC"
 sheet.cell(row=1, column = 11).value = "WE"
 
-wb.save('AH+SS - Copy.xlsx')
+wb.save('AH+SS - Temporary Copy.xlsx')
 print('Sorting completed!')
 
-df = pd.read_excel('AH+SS - Copy.xlsx')
+df = pd.read_excel('AH+SS - Temporary Copy.xlsx')
 df = df.sort_values(by='Course')
 df.to_excel('Master GE List.xlsx', index = False)
 
@@ -111,6 +111,7 @@ sheet1.cell(row=2, column = 5).value = "Breadth"
 sheet1.cell(row=2, column = 7).value = "Core Literacies"
 
 wb1.save('Master GE List.xlsx')
+os.remove('AH+SS - Temporary Copy.xlsx')
 print('Formatting completed!')
 
 
