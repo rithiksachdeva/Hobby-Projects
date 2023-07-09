@@ -1,5 +1,5 @@
-2 prongs - 
+IN PROGRESS: Proposed Idea (2 Functionalities) - 
 
-one is a meal planning tool: they have the week laid out in front of them, with an assumed 3 meals per day. Based on tags they can add trader recipes in each slot and it will auto populate a grocery list for them for the week with the estimated cost. Can also show them what their dietary intake would be daily or weekly. 
+1) Meal Planning Tool: User has a skeleton of the week laid out in front of them, with an assumed 3 meals per day left blank. Based on tags (breakfast, lunch, dinner, dessert) users can add Trader's recipes in each meal dropdown and the program auto populates a grocery list for  the week with the estimated cost. Further, will display what their dietary intake would be daily or weekly. 
 
-other prong, based on tags or certain ingredients or filtering out allergens etc., the tool will recommend a recipe. 
+2) Based on tags or certain ingredients or filtering out allergens etc., the tool will recommend a recipe. 
